@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mild.pc.mildsyunifang.MainActivity">
+
+    <com.mild.pc.mildsyunifang.view.NoScrllViewPage
+        android:id="@+id/vp_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </com.mild.pc.mildsyunifang.view.NoScrllViewPage>
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb_home_page"
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textColor="#FC6B87"
+            android:drawableTop="@mipmap/bottom_tab_home_selected"
+            android:gravity="center_horizontal"
+            android:text="首页"
+            android:checked="false" />
+        <RadioButton
+            android:id="@+id/rb_category"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/bottom_tab_classify_normal"
+            android:gravity="center_horizontal"
+            android:text="分类" />
+
+        <RadioButton
+            android:id="@+id/rb_cart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/bottom_tab_shopping_normal"
+            android:gravity="center_horizontal"
+            android:text="购物车" />
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/bottom_tab_user_normal"
+            android:gravity="center_horizontal"
+            android:text="我的" />
+    </RadioGroup>
+</LinearLayout>
